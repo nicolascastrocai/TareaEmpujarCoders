@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}  
+
+.calculadora{
+    margin: 200px auto;
+    background-color: black;
+    width: 252px;
+    height: 351px;
+    padding-top: 41px;
+}
+
+.pantalla{
+    width: 209px;
+    height: 82px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+.numero-pantalla{
+    justify-content: flex-end;
+    margin: 3px 10px;
+    font-size: 30px;
+}
+
+.conteiner-botones{
+    width: 209px;
+    height: 227px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botones-numeros{
+    width: 35px;
+    height: 35px;
+    background-color: #D9D9D9;
+    margin: 5px 5px;
+
+}
+
+.botones-numeros-mas{
+    width: 35px;
+    height: 55px;
+    background-color: #D9D9D9;
+    margin: 5px 5px;
+    align-items: center;    
+}
+
+.espacio{
+    margin-left: 15px;
+}
+
+.botones-especiales{
+    margin-bottom: 20px;
+}
+
+.btn{
+    margin: 10px 13px;
+    font-size: 20px;
+}
+
+.btn1{
+    margin: 10px 10px;
+}
+
+.btn-mas{
+    margin: 20px 13px;
+}
