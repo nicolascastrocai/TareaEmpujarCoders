@@ -26,6 +26,7 @@
     justify-content: flex-end;
     margin: 3px 10px;
     font-size: 30px;
+    
 }
 
 .conteiner-botones{
@@ -39,14 +40,21 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    
 }
+
 
 .botones-numeros{
     width: 35px;
     height: 35px;
     background-color: #D9D9D9;
     margin: 5px 5px;
+    cursor: pointer;
 
+}
+
+.botones-numeros:hover{
+    background-color: white;
 }
 
 .botones-numeros-mas{
@@ -54,7 +62,11 @@
     height: 55px;
     background-color: #D9D9D9;
     margin: 5px 5px;
-    align-items: center;    
+    align-items: center; 
+    cursor: pointer;   
+}
+.botones-numeros-mas{
+    background-color: white;
 }
 
 .espacio{
@@ -76,4 +88,205 @@
 
 .btn-mas{
     margin: 20px 13px;
+}
+
+@media screen and (min-width: 1224px){
+body{
+    background-color: #D9D9D9;
+}
+.calculadora{
+    margin: 50px auto;
+    width: 552px;
+    height: 651px;
+    padding-top: 41px;
+}
+
+.pantalla{
+    width: 409px;
+    height: 182px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+.numero-pantalla{
+    justify-content: flex-end;
+    margin: 10px 20px;
+    font-size: 50px;
+    
+}
+
+.conteiner-botones{
+    width: 409px;
+    height: 427px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.botones-numeros{
+    width: 75px;
+    height: 65px;
+    background-color: #D9D9D9;
+    margin: 5px 5px;
+    cursor: pointer;
+
+}
+
+.botones-numeros:hover{
+    background-color: white;
+}
+
+.botones-numeros-mas{
+    width: 75px;
+    height: 85px;
+    background-color: #D9D9D9;
+    margin: 5px 5px;
+    align-items: center; 
+    cursor: pointer;   
+}
+.botones-numeros-mas{
+    background-color: white;
+}
+
+.espacio{
+    margin-left: 35px;
+}
+
+.botones-especiales{
+    margin-bottom: 10px;
+}
+
+.btn{
+    margin: 22px 29px;
+    font-size: 20px;
+}
+
+.btn1{
+    margin: 22px 29px;
+}
+
+.btn-mas{
+    margin: 30px 29px;
+}
+}
+
+@media screen and (max-width: 594px) {
+    body{
+        background-color: white;
+    }
+    .calculadora{
+        margin: 200px auto;
+        background-color: black;
+        width: 152px;
+        height: 211px;
+        padding-top: 31px;
+    }
+    
+    .pantalla{
+        width: 109px;
+        height: 42px;
+        background-color: white;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        
+    }
+    
+    .numero-pantalla{
+        justify-content: flex-end;
+        margin: 3px 7px;
+        font-size: 20px;
+        
+    }
+    
+    .conteiner-botones{
+        width: 109px;
+        height: 157px;
+        margin: auto;
+        margin-top: 5px;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    
+    .botones-numeros{
+        width: 18px;
+        height: 20px;
+        background-color: #D9D9D9;
+        margin: 2px 2px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .botones-numeros:hover{
+        background-color: white;
+    }
+    
+    .botones-numeros-mas{
+        width: 20px;
+        height: 25px;
+        margin: 2px 3px;
+        margin-bottom: 10px;
+        align-items: center;   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .espacio{
+        margin-left: 8px;
+    }
+    
+    .botones-especiales{
+        margin-bottom: 15px;
+    }
+    
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 10px;
+        margin: 0;
+        
+    }
+    
+    .btn1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        font-size: 10px;
+        margin: 0;
+        
+    }
+    
+    .btn-mas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        font-size: 10px;
+        margin: 0;
+
+    }
+
 }
