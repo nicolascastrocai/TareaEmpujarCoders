@@ -3,12 +3,17 @@
     padding: 0;
 }  
 
+body{
+    background-color: #D9D9D9;
+}
+
 .calculadora{
     margin: 200px auto;
     background-color: black;
     width: 252px;
     height: 351px;
     padding-top: 41px;
+    border-radius: 10%;
 }
 
 .pantalla{
@@ -19,6 +24,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    border-radius: 5%;
+
     
 }
 
@@ -47,26 +54,30 @@
 .botones-numeros{
     width: 35px;
     height: 35px;
-    background-color: #D9D9D9;
+    background-color: white;
     margin: 5px 5px;
     cursor: pointer;
+    border-radius: 20%;
+
 
 }
 
 .botones-numeros:hover{
-    background-color: white;
+    background-color: #D9D9D9 ;
 }
 
 .botones-numeros-mas{
     width: 35px;
     height: 55px;
-    background-color: #D9D9D9;
+    background-color: white;
     margin: 5px 5px;
     align-items: center; 
-    cursor: pointer;   
+    cursor: pointer; 
+    border-radius: 10%;
+  
 }
-.botones-numeros-mas{
-    background-color: white;
+.botones-numeros-mas:hover {
+    background-color: #D9D9D9;
 }
 
 .espacio{
@@ -75,6 +86,10 @@
 
 .botones-especiales{
     margin-bottom: 20px;
+}
+
+.color{
+    background-color:yellowgreen;
 }
 
 .btn{
@@ -90,10 +105,15 @@
     margin: 20px 13px;
 }
 
-@media screen and (min-width: 1224px){
-body{
-    background-color: #D9D9D9;
+.reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
 }
+
+@media screen and (min-width: 1224px){
+
 .calculadora{
     margin: 50px auto;
     width: 552px;
@@ -135,21 +155,25 @@ body{
 .botones-numeros{
     width: 75px;
     height: 65px;
-    background-color: #D9D9D9;
-    margin: 5px 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    font-size: 30px;
 
 }
 
 .botones-numeros:hover{
-    background-color: white;
+    background-color: #D9D9D9;
 }
 
 .botones-numeros-mas{
     width: 75px;
     height: 85px;
     background-color: #D9D9D9;
-    margin: 5px 5px;
+    display: flex;
+    justify-content: center;
     align-items: center; 
     cursor: pointer;   
 }
@@ -165,24 +189,34 @@ body{
     margin-bottom: 10px;
 }
 
+.color{
+    background-color:yellowgreen;
+}
+
 .btn{
-    margin: 22px 29px;
-    font-size: 20px;
+   
+    font-size: 30px;
 }
 
 .btn1{
-    margin: 22px 29px;
+    
+    font-size: 30px;
 }
 
 .btn-mas{
-    margin: 30px 29px;
+    
+    font-size: 50px;
+}
+
+.reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
 }
 }
 
 @media screen and (max-width: 594px) {
-    body{
-        background-color: white;
-    }
     .calculadora{
         margin: 200px auto;
         background-color: black;
@@ -227,7 +261,7 @@ body{
     .botones-numeros{
         width: 18px;
         height: 20px;
-        background-color: #D9D9D9;
+        background-color: white;
         margin: 2px 2px;
         cursor: pointer;
         display: flex;
@@ -237,7 +271,7 @@ body{
     }
     
     .botones-numeros:hover{
-        background-color: white;
+        background-color: #D9D9D9;
     }
     
     .botones-numeros-mas{
@@ -260,6 +294,10 @@ body{
         margin-bottom: 15px;
     }
     
+    .color{
+        background-color:yellowgreen;
+    }
+
     .btn{
         display: flex;
         justify-content: center;
@@ -287,6 +325,13 @@ body{
         font-size: 10px;
         margin: 0;
 
+    }
+    .reset{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        font-size: 15px;
     }
 
 }

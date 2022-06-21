@@ -1,0 +1,3 @@
+ cd Bash
+ ls
+main.sh  micarpeta  new  replit.nix

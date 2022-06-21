@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="calculadora">
+        <div class="pantalla">
+            <div id="pantallaGeneral" class="numero-pantalla">
+                
+            </div>
+        </div>
+
+        <div class="conteiner-botones">
+            <div id="1" class="botones-numeros">
+                <div  class="btn">1</div>
+
+            </div>
+            <div id="2" class="botones-numeros">
+                <div  class="btn">2</div>
+
+            </div>
+            <div id="3" class="botones-numeros">
+                <div  class="btn">3</div>
+
+            </div>
+            <div id="dividir" class="botones-numeros espacio">
+                <div class="btn">/</div>
+
+            </div>
+            <div id="4" class="botones-numeros">
+                <div  class="btn">4</div>
+
+            </div>
+            <div id="5" class="botones-numeros">
+                <div  class="btn">5</div>
+
+            </div>
+            <div id="6" class="botones-numeros">
+                <div  class="btn">6</div>
+
+            </div>
+            <div id="por" class="botones-numeros espacio">
+                <div class="btn">x</div>
+
+            </div>
+            <div id="7" class="botones-numeros">
+                <div  class="btn">7</div>
+
+            </div>
+            <div id="8" class="botones-numeros">
+                <div  class="btn">8</div>
+
+            </div>
+            <div id="9" class="botones-numeros">
+                <div  class="btn">9</div>
+
+            </div>
+            <div id="menos" class="botones-numeros espacio">
+                <div class="btn">-</div>
+   
+            </div>
+            <div id="cero" class="botones-numeros botones-especiales">
+                <div class="btn">0</div>
+
+            </div>
+            <div id="dobleCero" class="botones-numeros botones-especiales">
+                <div class="btn1">00</div>
+
+            </div>
+            <div id="igual" class="botones-numeros botones-especiales color">
+                <div class="btn">=</div>
+
+            </div>
+            <div id="mas" class="botones-numeros-mas espacio">
+                <div  class="btn-mas">+</div>
+
+            </div>
+            <div id="reset" class="botones-numeros reset">
+                <div  class="btn">Reset</div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+    //variables a las cual le asigno los valores devueltos en la pantalla 
+        var operandoa
+        var operanbob
+        var operacion
+        var r
+
+    //variable de la pantalla de la calculadora
+        var pantalla = document.getElementById('pantallaGeneral')
+        
+    //variables de los botones numericos de la calculadora
+        var uno= document.getElementById(1)
+        
+        var dos= document.getElementById(2)
+
+        var tres= document.getElementById(3)
+
+        var cuatro= document.getElementById(4)
+
+        var sinco= document.getElementById(5)
+
+        var seis= document.getElementById(6)
+
+        var siete= document.getElementById(7)
+ 
+        var ocho= document.getElementById(8)
+
+        var nueve= document.getElementById(9)
+
+        var cero= document.getElementById('cero')
+
+        var dobleCero= document.getElementById('dobleCero')
+
+    //variables de los botones especiales de la calculadora
+        var mas= document.getElementById('mas')
+        var menos= document.getElementById('menos')
+        var por= document.getElementById('por')
+        var dividir= document.getElementById('dividir')
+        var reset= document.getElementById('reset')
+
+        var igual= document.getElementById('igual')
+    
+    //evento  para agregarle funcionalidad a los botones de la calculadora
+        uno.addEventListener('click',function(){
+            if (r== 0) {
+                pantalla.innerText=''
+                r=1
+            }
+            
+            pantalla.innerText+=uno.innerText
+           
+        })
+
+        dos.addEventListener('click',function(){
+            if (r== 0) {
+                pantalla.innerText=''
+                r=1
+            }
+            numero2= dos.innerText
+            pantalla.innerText+=dos.innerText
+            
+        })
+
+        tres.addEventListener('click',function(){
+            if (r== 0) {
+                pantalla.innerText=''
+                r=1
+            }
+            numero3= tres.innerText
+            pantalla.innerText+=tres.innerText
+            
+        })
+
+        cuatro.addEventListener('click',function(){
+            if (r== 0) {
+                pantalla.innerText=''
+                r=1
+            }
+            numero4= cuatro.innerText
+            pantalla.innerText+=cuatro.innerText
+           
+        })
+
+        sinco.addEventListener('click',function(){
+            if (r== 0) {
+                pantalla.innerText=''
+                r=1
+            }
+            numero5= sinco.innerText
+            pantalla.innerText+=sinco.innerText
+            
+        })
+
+        seis.addEventListener('click',function(){
+            if (r== 0) {
+                pantalla.innerText=''
+                r=1
+            }
+            numero6= seis.innerText
+            pantalla.innerText+=seis.innerText
+            
+        })
+
+        siete.addEventListener('click',function(){
+            if (r== 0) {
+                pantalla.innerText=''
+                r=1
+            } 
+            numero7= siete.innerText
+            pantalla.innerText+=siete.innerText
+        })
+
+        ocho.addEventListener('click',function(){
+            if (r== 0) {
+                pantalla.innerText=''
+                r=1
+            }
+            numero8= ocho.innerText
+            pantalla.innerText+=ocho.innerText
+            
+        })
+
+        nueve.addEventListener('click',function(){
+            if (r== 0) {
+                pantalla.innerText=''
+                r=1
+            }
+            numero9= nueve.innerText
+            pantalla.innerText+=nueve.innerText
+            
+        })
+
+        cero.addEventListener('click',function(){
+            if (r== 0) {
+                pantalla.innerText=''
+                r=1
+            }
+            numero0= cero.innerText
+            pantalla.innerText+=cero.innerText
+            
+        })
+
+        dobleCero.addEventListener('click',function(){
+            if (r== 0) {
+                pantalla.innerText=''
+                r=1
+            }
+            numero00= dobleCero.innerText
+            pantalla.innerText+=dobleCero.innerText
+            
+
+        })
+
+    //le agregamos la funcionalidad a cada boton dependiendo de la operacion
+        mas.addEventListener('click',function(){
+            operandoa=parseFloat(pantalla.innerText)
+            console.log(parseFloat(operandoa))
+            operacion='+'
+            pantalla.innerText+='+' 
+        })
+
+        menos.addEventListener('click',function(){
+            operandoa=parseFloat(pantalla.innerText)
+            console.log(parseFloat(operandoa))
+            operacion='-'
+            pantalla.innerText+='-' 
+        })
+
+        dividir.addEventListener('click',function(){
+            operandoa=parseFloat(pantalla.innerText)
+            console.log(parseFloat(operandoa))
+            operacion='/'
+            pantalla.innerText+='-' 
+        })
+
+        por.addEventListener('click',function(){
+            operandoa=parseFloat(pantalla.innerText)
+            console.log(parseFloat(operandoa))
+            operacion='*'
+            pantalla.innerText+='*' 
+        })
+
+    //le asiganmos al = la funcion para podes realizar la operacion-
+    //dependiendo del operador asignado 
+        igual.addEventListener('click',function(){
+          operanbob=parseFloat(pantalla.innerText)
+          if (operacion=='') {
+            pantalla.innerText=''
+          }
+          
+          if (operacion=='+') {
+            var resultado= parseFloat(operandoa) + parseFloat(operanbob) 
+            pantalla.innerText=resultado
+          }
+          if (operacion=='-') {
+            var resultado= parseFloat(operandoa) - parseFloat(operanbob) 
+            pantalla.innerText=resultado
+          }
+
+          if (operacion=='/') {
+            var resultado= parseFloat(operandoa) / parseFloat(operanbob) 
+            pantalla.innerText=resultado
+          }
+        
+          if (operacion=='*') {
+            var resultado= parseFloat(operandoa) * parseFloat(operanbob) 
+            pantalla.innerText=resultado
+          }
+          operandoa=0
+          operandob=0
+          operacion=''
+          r=0
+        })
+
+        reset.addEventListener('click',function(){
+            pantalla.innerText=''
+            operandoa=0
+            operanbob=0
+            operacion=''
+            r=0
+        })
+
+    </script>
+</body>
+</html>

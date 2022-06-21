@@ -1,0 +1,74 @@
+ pwd
+/home/runner/Bash
+ ls
+main.sh  replit.nix
+ date
+Mon 30 May 2022 03:45:16 AM UTC
+ ls -ls
+total 8
+4 -rw-r--r-- 1 runner runner 16 Nov 11  2021 main.sh
+4 -rw-r--r-- 1 runner runner 62 Nov 11  2021 replit.nix
+ df -h
+Filesystem                                               Size  Used Avail Use% Mounted on
+overlay                                                  1.7T   42G  1.5T   3% /
+tmpfs                                                     64M     0   64M   0% /dev
+tmpfs                                                     32G     0   32G   0% /sys/fs/cgroup
+tmpfs                                                    6.3G   18M  6.3G   1% /io
+/dev/mapper/conman-1339                                  2.4G  980K  2.4G   1% /tmp
+overlay                                                  2.4G  980K  2.4G   1% /nix
+/dev/root                                                 25G   15G  9.6G  61% /mnt/cacache
+/dev/mapper/docker                                       1.7T   42G  1.5T   3% /etc/hosts
+shm                                                       64M     0   64M   0% /dev/shm
+/dev/disk/by-id/google-cacache-1652147451830-us-west1-a  6.0T  4.0T  2.1T  67% /mnt/cacache/nix
+devtmpfs                                                  32G     0   32G   0% /dev/tty
+tmpfs                                                     32G     0   32G   0% /proc/acpi
+tmpfs                                                     32G     0   32G   0% /proc/scsi
+tmpfs                                                     32G     0   32G   0% /sys/firmware
+overlay                                                  2.4G  980K  2.4G   1% /home/runner
+overlay                                                  2.4G  980K  2.4G   1% /home/runner/.cargo/registry
+overlay                                                  2.4G  980K  2.4G   1% /home/runner/.m2/repository
+overlay                                                  2.4G  980K  2.4G   1% /home/runner/.npm
+overlay                                                  2.4G  980K  2.4G   1% /home/runner/.cache/pip
+/dev/conman/412                                          2.4G  952K  2.4G   1% /home/runner/Bash
+ mkdir micarpeta
+ nano new tex
+nano: command not installed, but was located via Nix.
+Would you like to run nano from Nix? [Yn]: y
+Add 'nano' to replit.nix if you want to install 'nano' in this repl.
+/nix/store/9rgnba70kp3jv6ad2gmih07wnw3kamqd-nano-5.8
+ ^C
+ nano new tex
+nano: command not installed, but was located via Nix.
+Would you like to run nano from Nix? [Yn]: y
+Add 'nano' to replit.nix if you want to install 'nano' in this repl.
+/nix/store/9rgnba70kp3jv6ad2gmih07wnw3kamqd-nano-5.8
+ ls -a
+.  ..  .cache  main.sh  micarpeta  new  .replit  replit.nix
+ cd micarpeta
+ nano proceso tex
+nano: command not installed, but was located via Nix.
+Would you like to run nano from Nix? [Yn]: y
+Add 'nano' to replit.nix if you want to install 'nano' in this repl.
+/nix/store/9rgnba70kp3jv6ad2gmih07wnw3kamqd-nano-5.8
+ cd /home
+ ls
+runner
+ pwd
+/home
+ cd runnert
+bash: cd: runnert: No such file or directory
+ cd runner
+ ls
+Bash
+ cd bash
+bash: cd: bash: No such file or directory
+ cd Bash
+ ls
+main.sh  micarpeta  new  replit.nix
+ cd micarpeta
+ nano mis_archivos.txt tex
+nano: command not installed, but was located via Nix.
+Would you like to run nano from Nix? [Yn]: y
+Add 'nano' to replit.nix if you want to install 'nano' in this repl.
+/nix/store/9rgnba70kp3jv6ad2gmih07wnw3kamqd-nano-5.8
+ 
