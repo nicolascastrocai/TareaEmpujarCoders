@@ -16,15 +16,15 @@
         </div>
 
         <div class="conteiner-botones">
-            <div id="1" class="botones-numeros">
+            <div name="numeros" class="botones-numeros">
                 <div  class="btn">1</div>
 
             </div>
-            <div id="2" class="botones-numeros">
+            <div name="numeros" class="botones-numeros">
                 <div  class="btn">2</div>
 
             </div>
-            <div id="3" class="botones-numeros">
+            <div  name="numeros" class="botones-numeros">
                 <div  class="btn">3</div>
 
             </div>
@@ -32,15 +32,15 @@
                 <div class="btn">/</div>
 
             </div>
-            <div id="4" class="botones-numeros">
+            <div name="numeros" class="botones-numeros">
                 <div  class="btn">4</div>
 
             </div>
-            <div id="5" class="botones-numeros">
+            <div name="numeros" class="botones-numeros">
                 <div  class="btn">5</div>
 
             </div>
-            <div id="6" class="botones-numeros">
+            <div name="numeros" class="botones-numeros">
                 <div  class="btn">6</div>
 
             </div>
@@ -48,15 +48,15 @@
                 <div class="btn">x</div>
 
             </div>
-            <div id="7" class="botones-numeros">
+            <div name="numeros" class="botones-numeros">
                 <div  class="btn">7</div>
 
             </div>
-            <div id="8" class="botones-numeros">
+            <div name="numeros" class="botones-numeros">
                 <div  class="btn">8</div>
 
             </div>
-            <div id="9" class="botones-numeros">
+            <div name="numeros" class="botones-numeros">
                 <div  class="btn">9</div>
 
             </div>
@@ -64,11 +64,11 @@
                 <div class="btn">-</div>
    
             </div>
-            <div id="cero" class="botones-numeros botones-especiales">
+            <div name="numeros" class="botones-numeros botones-especiales">
                 <div class="btn">0</div>
 
             </div>
-            <div id="dobleCero" class="botones-numeros botones-especiales">
+            <div  name="numeros" class="botones-numeros botones-especiales">
                 <div class="btn1">00</div>
 
             </div>
@@ -99,27 +99,7 @@
         var pantalla = document.getElementById('pantallaGeneral')
         
     //variables de los botones numericos de la calculadora
-        var uno= document.getElementById(1)
-        
-        var dos= document.getElementById(2)
-
-        var tres= document.getElementById(3)
-
-        var cuatro= document.getElementById(4)
-
-        var sinco= document.getElementById(5)
-
-        var seis= document.getElementById(6)
-
-        var siete= document.getElementById(7)
- 
-        var ocho= document.getElementById(8)
-
-        var nueve= document.getElementById(9)
-
-        var cero= document.getElementById('cero')
-
-        var dobleCero= document.getElementById('dobleCero')
+        var numeros= document.getElementsByName('numeros')
 
     //variables de los botones especiales de la calculadora
         var mas= document.getElementById('mas')
@@ -131,115 +111,17 @@
         var igual= document.getElementById('igual')
     
     //evento  para agregarle funcionalidad a los botones de la calculadora
-        uno.addEventListener('click',function(){
+
+       numeros.forEach(numero => {
+        numero.addEventListener('click',function(){
+            console.log(numero);
             if (r== 0) {
                 pantalla.innerText=''
                 r=1
             }
-            
-            pantalla.innerText+=uno.innerText
-           
+            pantalla.innerText+=numero.innerText
         })
-
-        dos.addEventListener('click',function(){
-            if (r== 0) {
-                pantalla.innerText=''
-                r=1
-            }
-            numero2= dos.innerText
-            pantalla.innerText+=dos.innerText
-            
-        })
-
-        tres.addEventListener('click',function(){
-            if (r== 0) {
-                pantalla.innerText=''
-                r=1
-            }
-            numero3= tres.innerText
-            pantalla.innerText+=tres.innerText
-            
-        })
-
-        cuatro.addEventListener('click',function(){
-            if (r== 0) {
-                pantalla.innerText=''
-                r=1
-            }
-            numero4= cuatro.innerText
-            pantalla.innerText+=cuatro.innerText
-           
-        })
-
-        sinco.addEventListener('click',function(){
-            if (r== 0) {
-                pantalla.innerText=''
-                r=1
-            }
-            numero5= sinco.innerText
-            pantalla.innerText+=sinco.innerText
-            
-        })
-
-        seis.addEventListener('click',function(){
-            if (r== 0) {
-                pantalla.innerText=''
-                r=1
-            }
-            numero6= seis.innerText
-            pantalla.innerText+=seis.innerText
-            
-        })
-
-        siete.addEventListener('click',function(){
-            if (r== 0) {
-                pantalla.innerText=''
-                r=1
-            } 
-            numero7= siete.innerText
-            pantalla.innerText+=siete.innerText
-        })
-
-        ocho.addEventListener('click',function(){
-            if (r== 0) {
-                pantalla.innerText=''
-                r=1
-            }
-            numero8= ocho.innerText
-            pantalla.innerText+=ocho.innerText
-            
-        })
-
-        nueve.addEventListener('click',function(){
-            if (r== 0) {
-                pantalla.innerText=''
-                r=1
-            }
-            numero9= nueve.innerText
-            pantalla.innerText+=nueve.innerText
-            
-        })
-
-        cero.addEventListener('click',function(){
-            if (r== 0) {
-                pantalla.innerText=''
-                r=1
-            }
-            numero0= cero.innerText
-            pantalla.innerText+=cero.innerText
-            
-        })
-
-        dobleCero.addEventListener('click',function(){
-            if (r== 0) {
-                pantalla.innerText=''
-                r=1
-            }
-            numero00= dobleCero.innerText
-            pantalla.innerText+=dobleCero.innerText
-            
-
-        })
+       });
 
     //le agregamos la funcionalidad a cada boton dependiendo de la operacion
         mas.addEventListener('click',function(){
