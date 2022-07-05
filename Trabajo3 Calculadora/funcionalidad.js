@@ -1,28 +1,27 @@
-var operandoa
-var operanbob
-var operacion
-var r
+let operandoa
+let operanbob
+let operacion
+let r
 
 //variable de la pantalla de la calculadora
-var pantalla = document.getElementById('pantallaGeneral')
+let pantalla = document.getElementById('pantallaGeneral')
 
 //variables de los botones numericos de la calculadora
-var numeros= document.getElementsByName('numeros')
+let numeros= document.getElementsByName('numeros')
 
 //variables de los botones especiales de la calculadora
-var mas= document.getElementById('mas')
-var menos= document.getElementById('menos')
-var por= document.getElementById('por')
-var dividir= document.getElementById('dividir')
-var reset= document.getElementById('reset')
+let mas= document.getElementById('mas')
+let menos= document.getElementById('menos')
+let por= document.getElementById('por')
+let dividir= document.getElementById('dividir')
+let reset= document.getElementById('reset')
 
-var igual= document.getElementById('igual')
+let igual= document.getElementById('igual')
 
 //evento  para agregarle funcionalidad a los botones de la calculadora
 
 numeros.forEach(numero => {
 numero.addEventListener('click',function(){
-    console.log(numero);
     if (r== 0) {
         pantalla.innerText=''
         r=1
@@ -50,7 +49,7 @@ dividir.addEventListener('click',function(){
     operandoa=parseFloat(pantalla.innerText)
     console.log(parseFloat(operandoa))
     operacion='/'
-    pantalla.innerText+='-' 
+    pantalla.innerText+='/' 
 })
 
 por.addEventListener('click',function(){
@@ -69,21 +68,21 @@ igual.addEventListener('click',function(){
   }
   
   if (operacion=='+') {
-    var resultado= parseFloat(operandoa) + parseFloat(operanbob) 
+    let resultado= parseFloat(operandoa) + parseFloat(operanbob) 
     pantalla.innerText=resultado
   }
   if (operacion=='-') {
-    var resultado= parseFloat(operandoa) - parseFloat(operanbob) 
+    let resultado= parseFloat(operandoa) - parseFloat(operanbob) 
     pantalla.innerText=resultado
   }
 
   if (operacion=='/') {
-    var resultado= parseFloat(operandoa) / parseFloat(operanbob) 
+    let resultado= parseFloat(operandoa) / parseFloat(operanbob) 
     pantalla.innerText=resultado
   }
 
   if (operacion=='*') {
-    var resultado= parseFloat(operandoa) * parseFloat(operanbob) 
+    let resultado= parseFloat(operandoa) * parseFloat(operanbob) 
     pantalla.innerText=resultado
   }
   operandoa=0
